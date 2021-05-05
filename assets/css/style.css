@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  height: 100vh;
+  text-align: center;
+}
+
+.container h1{
+ text-transform: uppercase;
+ font-size: 40px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ .wrapper{
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+
+.wrapper .box-img{
+  height: 100%;
+  padding-top: 10px;
+
+}
+.wrapper .box-img img{
+  height: 100%;
+}
+
+.prev,.next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.next{
+  right: 0;
+}
+
+.nav-circle{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+  padding:  20px;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 50px;
+}
+
+.nav-circle i{
+  color: white;
+  font-size: 18px;
+  padding: 0 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.nav-circle i.active{
+  color: blue;
+}
+
+.nav-console{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.nav-console i.fa-play-circle,
+.nav-console i.fa-stop{
+  font-size: 24px;
+  padding: 2px;
+  color: darkgray;
+}
+.nav-console i.fa-play-circle:hover,
+.nav-console i.fa-stop:hover{
+  color: white;
+  font-size: 26px;
+
+}
